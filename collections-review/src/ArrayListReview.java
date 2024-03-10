@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class ArrayListReview {
 
@@ -33,8 +30,39 @@ public class ArrayListReview {
         }
 
         //backward iteration
+        System.out.println("printing backward.....");
         while (((ListIterator<?>) iter).hasPrevious()){
             System.out.println(((ListIterator<?>) iter).previous());
+        }
+
+        //3. for each loop
+        System.out.println("printing for each loop.....");
+        for(Student student : students) System.out.println(student);
+
+        //4. Lambda
+        System.out.println("printing with lambda.....");
+        students.forEach(student -> System.out.println(student));  //multipleparameter: (student, teacher -> ....
+
+        //sorting elements in list
+        System.out.println("Printing with sorted List by comp......");
+        Collections.sort(students, new sortByIdDesc());
+        System.out.println(students);
+
+        Collections.sort(students, new sortByNameDesc());
+        System.out.println(students);
+    }
+
+    static class sortByIdDesc implements Comparator<Student>{
+        @Override
+        public int compare(Student o1, Student o2){
+            return o2.id-o1.id;
+        }
+    }
+
+    static class sortByNameDesc implements Comparator<Student>{
+        @Override
+        public int compare(Student o1, Student o2){
+            return o1.name.compareToIgnoreCase(o2.name);
         }
     }
 }
