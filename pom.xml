@@ -9,5 +9,17 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>generics</module>
+    <module>lambda</module>
   </modules>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.22</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
 </project>

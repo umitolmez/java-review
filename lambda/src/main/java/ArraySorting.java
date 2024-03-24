@@ -24,7 +24,3 @@ public class ArraySorting {
         sorting.sort();
     }
 }
-
-interface MyLambda{
-    void print();
-}
