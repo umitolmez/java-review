@@ -1,4 +1,6 @@
-package main.java;
+
+@FunctionalInterface
 public interface Sorting {
     public void sort();
+
 }

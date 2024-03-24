@@ -1,24 +1,24 @@
-package main.java;
+import lombok.*;
 
 import java.util.Objects;
 
-import lombok.*;
-
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor
-//@Data
+@Data
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
+//@RequiredArgsConstructor
 public class Student {
+
     private String firstName;
     private String lastName;
-    private String username;
+    private String userName;
     private String email;
     private String password;
     private String confirmPassword;
-    private int age;
+//    private final int age;
+
 
 }

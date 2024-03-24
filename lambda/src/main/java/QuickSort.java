@@ -1,8 +1,6 @@
-package main.java;
-
-public class QuickSort implements Sorting{
+public class QuickSort implements Sorting {
     @Override
     public void sort() {
-        System.out.println("quick sorting");
+        System.out.println("Quicksorting");
     }
 }
