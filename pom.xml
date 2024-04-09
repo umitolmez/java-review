@@ -9,7 +9,8 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>generics</module>
-    <module>lambda</module>
+    <module>lambda2</module>
+      <module>lambda2</module>
   </modules>
 
   <dependencies>
