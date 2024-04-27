@@ -25,8 +25,8 @@ public class AppleTest {
 //        System.out.println(greenApple);
 
 
-        List<Apple> greenApple = filterApples(inventory, Apple apple -> apple.getColor().equals(Color.GREEN));
-        System.out.println(greenApple);
+        //List<Apple> greenApple = filterApples(inventory, Apple apple -> apple.getColor().equals(Color.GREEN));
+        //System.out.println(greenApple);
     }
 //
 //    private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate) {
